@@ -10,7 +10,7 @@ public class AnagramBatchProcessor {
     //todo could probably simplify this now that we know the lines param will be a list of strings with the same length
     /**
      * Process a list of strings and group them by those that are anagrams of each other
-     * @param lines - list of strings
+     * @param lines - list of strings to process
      * @return A list of strings, each string is a collection of anagrams in a comma delimited list
      */
     public List<String> findAnagrams(List<String> lines) {

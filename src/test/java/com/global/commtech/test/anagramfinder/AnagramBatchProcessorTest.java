@@ -47,7 +47,7 @@ class AnagramBatchProcessorTest {
         assertThat(anagrams).contains("bbae,aebb");
     }
 
-    //todo this test should go if the class enforces a List where all strings are the same length
+    //this test should go/change if findAnagrams enforces a List where all strings are the same length
     @Test
     void shouldProcessMultipleEntryListWithAMixedLengthList() {
         List<String> anagrams = anagramBatchProcessor.findAnagrams(List.of("test", "stte", "ttse", "rest", "bbae", "aebb", "tester", "mixed", "ximed", "demix"));

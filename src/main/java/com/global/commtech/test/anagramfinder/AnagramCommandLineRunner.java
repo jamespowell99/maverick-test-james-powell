@@ -32,6 +32,7 @@ public class AnagramCommandLineRunner implements CommandLineRunner {
 
         List<String> currentBatch = new ArrayList<>();
         int currentLength = 0;
+        // Work through the file line by line, process in batches of string length
         try (Stream<String> lines = Files.lines(path)) {
             Iterator<String> iterator = lines.iterator();
             while (iterator.hasNext()) {
